@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,11 @@
 <body>
     <header class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Barbershop</a>
+            <a class="navbar-brand" href="#">САД РОСИНКА</a>
             <nav>
-                <a href="#about">About</a>
-                <a href="#masters">Masters</a>
-                <a href="#booking">Book Now</a>
+                <a href="#about"> О нас</a>
+                <a href="#masters">Специалисты</a>
+                <a href="#booking">Оставить заявку</a>
             </nav>
         </div>
     </header>
@@ -27,14 +27,14 @@
     <main>
         <section id="about" class="py-5">
             <div class="container">
-                <h2>About Us</h2>
-                <!-- Add about content -->
+                <h2>О НАС</h2>
+                Как интересно, весело и приятно провести время на даче!!! Ростовская область, Аксайский район, Мишкинское сельское поселение, садоводческое некоммерческое товарищество Росинка<!-- Add about content -->
             </div>
         </section>
 
         <section id="masters" class="py-5 bg-light">
             <div class="container">
-                <h2>Our Masters</h2>
+                <h2>НАШИ СПЕЦИАЛИСТЫ</h2>
                 <div class="row">
                     {% for master in masters %}
                     <div class="col-md-4 mb-4">
@@ -53,11 +53,11 @@
 
         <section id="booking" class="py-5">
             <div class="container">
-                <h2>Book an Appointment</h2>
+                <h2>Запишитесь на оказание услуги</h2>
                 <form method="post" id="booking-form">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <button type="submit" class="btn btn-primary">Book Now</button>
+                    <button type="submit" class="btn btn-primary">Оставить заявку</button>
                 </form>
             </div>
         </section>
@@ -65,7 +65,7 @@
 
     <footer class="bg-dark text-white py-4">
         <div class="container">
-            <!-- Add footer content -->
+            РОСИНКА 2025<!-- Add footer content -->
         </div>
     </footer>
 
