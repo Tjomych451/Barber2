@@ -4,18 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbershop</title>
+    <title>Garden</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         html {
             scroll-behavior: smooth;
         }
+        body {
+            background-color: #e6ffe6; /* Замените на нужный цвет */
+        }
+        
+          
+        {% comment %} .custom-background {
+            background-color:rgb(76, 137, 194);
+        } {% endcomment %}
     </style>
 </head>
 <body>
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class="navbar navbar-expand-lg navbar-success bg-warning">
         <div class="container">
-            <a class="navbar-brand" href="#">САД РОСИНКА</a>
+            <a class="navbar-brand" href="#">  СНТ - "РОСИНКА"</a>
             <nav>
                 <a href="#about"> О нас</a>
                 <a href="#masters">Специалисты</a>
@@ -28,12 +36,18 @@
         <section id="about" class="py-5">
             <div class="container">
                 <h2>О НАС</h2>
-                Как интересно, весело и приятно провести время на даче!!! Ростовская область, Аксайский район, Мишкинское сельское поселение, садоводческое некоммерческое товарищество Росинка<!-- Add about content -->
+                {% comment %} <div class="container">
+                    <!-- Существующий контент -->
+                    <img src="{{ master.photo.url }}" alt="Описание изображения" class="card-img-top">
+                </div>
+    
+                <img src="C:\Users\VivoBook S\python422\diplom\Garden\garden\img\garden.jpg" alt="Картинка сада"> {% endcomment %}
+                <h4>Как интересно, весело и приятно провести время на даче!!!  Можно ходить в лес за ягодами или грибами, заниматься рыбалкой, устраивать пикники и играть на свежем воздухе. Отсутствие городской суеты и постоянного шума благотворно влияет на психику и снижает уровень стресса.У нас закрытая, охраняемая территория. Если любите свежий воздух, приезжайте к нам! Ростовская область, Аксайский район, Мишкинское сельское поселение, садоводческое некоммерческое товарищество Росинка</h4><!-- Add about content -->
             </div>
         </section>
 
-        <section id="masters" class="py-5 bg-light">
-            <div class="container">
+        <section id="masters" class="py-5 bg-bg-opacity: .5;" >
+            <div class="container" style="background-color: #e6ffe6;" >
                 <h2>НАШИ СПЕЦИАЛИСТЫ</h2>
                 <div class="row">
                     {% for master in masters %}
@@ -53,7 +67,7 @@
 
         <section id="booking" class="py-5">
             <div class="container">
-                <h2>Запишитесь на оказание услуги</h2>
+                <h2>Напишите заявку</h2>
                 <form method="post" id="booking-form">
                     {% csrf_token %}
                     {{ form.as_p }}
@@ -63,9 +77,10 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            РОСИНКА 2025<!-- Add footer content -->
+    <footer  class="bg-primary text-white py-4">
+        <div style="display: flex; justify-content: center; align-items: center;" class="container">
+              РОСИНКА 2025.        Все права защищены!!!
+              <br>Сайт создал Парахуда Артем<!-- Add footer content -->
         </div>
     </footer>
 

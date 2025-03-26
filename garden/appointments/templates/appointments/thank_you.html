@@ -1,0 +1,72 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}Заявка отправлена{% endblock %}
+
+{% block content %}
+<div class="thank-you-overlay">
+    <div class="thank-you-message">
+        <h2>Ваша заявка успешно отправлена!</h2>
+        <p>Мы свяжемся с вами в ближайшее время для подтверждения записи.</p>
+        <a href="{% url 'index' %}" class="btn btn-primary">Вернуться на главную</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    body {
+        /* Используем фоновое изображение стартовой страницы */
+        background-image: url('{% static "images/background.jpg" %}');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .thank-you-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .thank-you-message {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 500px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .thank-you-message h2 {
+        color: #28a745;
+        margin-bottom: 20px;
+    }
+    
+    .thank-you-message p {
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+    
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+</style>
+{% endblock %}

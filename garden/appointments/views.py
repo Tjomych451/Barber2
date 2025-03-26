@@ -19,6 +19,9 @@ def index(request):
     })
 
 def thank_you(request):
+    """
+    Отображает страницу благодарности после успешной отправки заявки
+    """
     return render(request, 'appointments/thank_you.html')
 
 def get_services(request, master_id):
