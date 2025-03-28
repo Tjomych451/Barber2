@@ -18,6 +18,10 @@
 <body>
     <header class="navbar navbar-expand-lg navbar-success bg-warning">
         <div class="container">
+             <!-- Добавляем логотип -->
+             <a class="navbar-brand" href="{% url 'index' %}">
+                <img src="{% static 'images\garden.jpg' %}" alt="Логотип" height="100">
+            </a>
             <a class="navbar-brand" href="#">  СНТ - "РОСИНКА"</a>
             <nav>
                 <a href="#about"> О нас</a>
