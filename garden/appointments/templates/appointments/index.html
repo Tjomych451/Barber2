@@ -13,6 +13,10 @@
         body {
             background-color: #e6ffe6; /* Замените на нужный цвет */
         }
+        .navbar-brand img:hover {
+            transform: scale(2.05);  /* Небольшое увеличение при наведении */
+        }
+        
     </style>
 </head>
 <body>
@@ -20,7 +24,7 @@
         <div class="container">
              <!-- Добавляем логотип -->
              <a class="navbar-brand" href="{% url 'index' %}">
-                <img src="{% static 'images\garden.jpg' %}" alt="Логотип" height="100">
+                <img src="{% static 'images\garden.jpg' %}" alt="Логотип" height="60">
             </a>
             <a class="navbar-brand" href="#">  СНТ - "РОСИНКА"</a>
             <nav>
@@ -38,6 +42,20 @@
             <div class="container">
                 <h2>О НАС</h2>
                 <h4>Как интересно, весело и приятно провести время на даче!!!  Можно ходить в лес за ягодами или грибами, заниматься рыбалкой, устраивать пикники и играть на свежем воздухе. Отсутствие городской суеты и постоянного шума благотворно влияет на психику и снижает уровень стресса.У нас закрытая, охраняемая территория. Если любите свежий воздух, приезжайте к нам! Ростовская область, Аксайский район, Мишкинское сельское поселение, садоводческое некоммерческое товарищество Росинка</h4>
+                <a class="navbar-brand" href="{% url 'index' %}">
+                    <img src="{% static 'images\отдых1.jpg' %}" alt="Логотип" height="220">
+                    <img src="{% static 'images\отдых2.jpg' %}" alt="Логотип" height="220">
+                    <img src="{% static 'images\отдых3.jpg' %}" alt="Логотип" height="220">
+                    <img src="{% static 'images\отдых4.jpg' %}" alt="Логотип" height="220">
+                    
+                </a>
+                <a class="navbar-brand" href="{% url 'index' %}">
+                    <img src="{% static 'images\отдых5.jpg' %}" alt="Логотип" height="220">
+                    <img src="{% static 'images\отдых6.jpg' %}" alt="Логотип" height="220">
+                    <img src="{% static 'images\отдых7.jpg' %}" alt="Логотип" height="220">
+                    <img src="{% static 'images\отдых8.jpg' %}" alt="Логотип" height="210">
+                
+                </a>
             </div>
         </section>
 
