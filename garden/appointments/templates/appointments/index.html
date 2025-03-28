@@ -26,9 +26,11 @@
              <a class="navbar-brand" href="{% url 'index' %}">
                 <img src="{% static 'images\logotap.jpg' %}" alt="Логотип" height="70">
             </a>
-            <a class="navbar-brand" href="#">  СНТ - "РОСИНКА"</a>
+            <a class="navbar-brand" href="#"> 
+                <h3> СНТ - "РОСИНКА"</h3>
+            </a>
             <nav>
-                <a href="#about"> О нас</a>
+                <a href="#about"> О нас </a> 
                 <a href="#masters">Специалисты</a>
                 {% if user.is_authenticated %}
                 <a href="#booking">Оставить заявку</a>
@@ -43,17 +45,17 @@
                 <h2>О НАС</h2>
                 <h4>Как интересно, весело и приятно провести время на даче!!!  Можно ходить в лес за ягодами или грибами, заниматься рыбалкой, устраивать пикники и играть на свежем воздухе. Отсутствие городской суеты и постоянного шума благотворно влияет на психику и снижает уровень стресса.У нас закрытая, охраняемая территория. Если любите свежий воздух, приезжайте к нам! Ростовская область, Аксайский район, Мишкинское сельское поселение, садоводческое некоммерческое товарищество Росинка</h4>
                 <a class="navbar-brand" href="{% url 'index' %}">
-                    <img src="{% static 'images\отдых1.jpg' %}" alt="Логотип" height="220">
-                    <img src="{% static 'images\отдых2.jpg' %}" alt="Логотип" height="220">
-                    <img src="{% static 'images\отдых3.jpg' %}" alt="Логотип" height="220">
-                    <img src="{% static 'images\отдых4.jpg' %}" alt="Логотип" height="220">
+                    <img src="{% static 'images\отдых1.jpg' %}" alt="природа1" height="220">
+                    <img src="{% static 'images\отдых2.jpg' %}" alt="природа2" height="220">
+                    <img src="{% static 'images\отдых3.jpg' %}" alt="природа3" height="220">
+                    <img src="{% static 'images\отдых4.jpg' %}" alt="природа4" height="220">
                     
                 </a>
                 <a class="navbar-brand" href="{% url 'index' %}">
-                    <img src="{% static 'images\отдых5.jpg' %}" alt="Логотип" height="220">
-                    <img src="{% static 'images\отдых6.jpg' %}" alt="Логотип" height="220">
-                    <img src="{% static 'images\отдых7.jpg' %}" alt="Логотип" height="220">
-                    <img src="{% static 'images\отдых8.jpg' %}" alt="Логотип" height="210">
+                    <img src="{% static 'images\отдых5.jpg' %}" alt="природа5" height="220">
+                    <img src="{% static 'images\отдых6.jpg' %}" alt="природа6" height="220">
+                    <img src="{% static 'images\отдых7.jpg' %}" alt="природа7" height="220">
+                    <img src="{% static 'images\отдых8.jpg' %}" alt="природа8" height="210">
                 
                 </a>
             </div>
@@ -102,7 +104,7 @@
     <footer  class="bg-primary text-white py-4">
         <div style="display: flex; justify-content: center; align-items: center;" class="container">
               РОСИНКА 2025.        Все права защищены!!!
-              <br>Сайт зазработал Парахуда Артем
+              <br>Сайт разработал Парахуда Артем
         </div>
     </footer>
 
