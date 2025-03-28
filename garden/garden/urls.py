@@ -8,6 +8,7 @@ from accounts import views as accounts_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('appointments.urls')),
+    path('thank-you/', views.thank_you, name='thank_you'),
     path('login/', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(next_page='/'), name='logout'),
     path('register/', accounts_views.register, name='register'),
